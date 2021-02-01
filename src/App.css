@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.header ul {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+}
+
+.header li:not(:last-child) {
+  margin-right: 40px;
+}
+
+input {
+  width: 15%;
+  height: 25px;
+  border-radius: 20px;
+  border: grey solid 2px;
+  -webkit-appearance: none;
+  outline: none;
+
+}
+
+input::placeholder{
+  padding-left: 12px;
+  font-style: italic;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header li:hover {
+  background: linear-gradient(177deg, rgba(97, 216, 86, 0) 65%, rgb(238, 167, 62, 0.5) 10%);
+  background-position-x: right 3px;
+  cursor: pointer;
+}
+
+.header img {
+  width: 40px;
+}
+
+.title {
+  color: rgb(46, 45, 45,116); 
+  font-style: italic;
+  margin-left: 15px; 
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jobs {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.job {
+  width: 300px;
+  height: 340px;
+  box-sizing: border-box;
+  margin: 20px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 70px;
+  position: relative;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow:  9px 9px 18px #d9d9d9,
+               -9px -9px 18px #ffffff;
+}
+
+.job:hover {
+  cursor: pointer;
+}
+
+.job h2 {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+.job_info {
+  font-size: 17px;
+  position: absolute;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  bottom: 25px;
+  left: 35px;
+}
+
+.company_info {
+  display: flex;
+  flex-direction: column ;
+  line-height: 35px;
+  margin-top: 10px;
+  position: absolute;
+  top: 110px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.publication_date {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.company_name {
+  font-size: 20px;
+}
+
+.red {
+  display: inline;
+  background: linear-gradient(179deg, rgba(97, 216, 86, 0) 65%, #faa8a8 70%);
+}
+
+.green {
+  display: inline;
+  background: linear-gradient(179deg, rgba(97, 216, 86, 0) 65%, #95fcaf 70%);
+}
+
+.yellow {
+  display: inline;
+  background: linear-gradient(179deg, rgba(97, 216, 86, 0) 65%, #faf392 70%);
+}
+
+.blue {
+  display: inline;
+  background: linear-gradient(179deg, rgba(97, 216, 86, 0) 65%, #b5f7fc 70%);
+}
+
+.pink {
+  display: inline;
+  background: linear-gradient(179deg, rgba(97, 216, 86, 0) 65%, #eabcf8 70%);
+}
+
+.save {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+.save:hover {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: rgb(249, 0, 0);
+  border: rgb(247, 0, 0) solid 0.5px;
 }
