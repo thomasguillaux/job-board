@@ -5,7 +5,7 @@ const Jobs = () => {
         <div className="jobs">
             <Job 
                 className="red"
-                jobTitle={"Full Time Sales Associate"}
+                jobTitle={"Sales Associate"}
                 contractType ="CDI"
                 country="Australie"
                 city="Sidney"
